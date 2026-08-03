@@ -29,6 +29,17 @@
     "zephyr": {
       "package": "framework-zephyr",
       "script": "builder/frameworks/zephyr.py"
+    },
+    "sofios": {
+      "package": "framework-sofios",
+      "script": "builder/frameworks/sofios.py",
+      "description": "SofiOS is an embedded framework that contains software building blocks for IoT products.",
+      "homepage": "https://sofia-technologies.com",
+      "title": "SofiOS"
+    },
+    "Asf4": {
+      "package": "framework-asf4",
+      "script": "builder/frameworks/asf4.py"
     }
   },
   "packages": {
@@ -120,6 +131,12 @@
       "optional": true,
       "owner": "platformio",
       "version": "~2.20701.0"
+    },
+    "framework-sofios": {
+      "type": "framework",
+      "optional": true,
+      "owner": "platformio",
+      "version": "http://gitlab.sofia.local/dsw/dsem/embedded/framework/sofios.git#dev"
     },
     "tool-avrdude": {
       "type": "uploader",

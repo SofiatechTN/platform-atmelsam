@@ -1,6 +1,7 @@
 {
   "build": {
     "cpu": "cortex-m0plus",
+    "extra_flags": "-D__SAMD21J18A__ -DBOARD_ATMEL_SAMD21_XPRO",
     "f_cpu": "48000000L",
     "mcu": "samd21j18a",
     "zephyr": {
@@ -17,7 +18,8 @@
     "svd_path": "ATSAMD21J18A.svd"
   },
   "frameworks": [
-    "zephyr"
+    "zephyr",
+    "sofios"
   ],
   "name": "Atmel SAMD21-XPRO",
   "upload": {
