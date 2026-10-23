@@ -1,0 +1,29 @@
+{
+  "build": {
+    "cpu": "cortex-m0plus",
+    "extra_flags": "-D__SAMD21J18A__ -DBOARD_MENZU_IJEN",
+    "f_cpu": "48000000L",
+    "system": "samd",
+    "mcu": "samd21j18a"
+  },
+  "debug": {
+    "jlink_device": "ATSAMD21J18",
+    "onboard_tools": ["jlink"],
+    "openocd_chipname": "at91samd21j18",
+    "openocd_target": "at91samdXX",
+    "svd_path": "ATSAMD21J18A.svd"
+  },
+  "frameworks": [
+    "sofios",
+    "Asf4"
+  ],
+  "name": "Menzu IJEN-SAMD21J18A",
+  "upload": {
+    "maximum_ram_size": 32768,
+    "maximum_size": 262144,
+    "protocol": "jlink",
+    "protocols": ["cmsis-dap", "jlink"]
+  },
+  "url": "https://sofia-technologies.com/",
+  "vendor": "Sofiatech"
+}
